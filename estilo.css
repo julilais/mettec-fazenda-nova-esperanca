@@ -29,6 +29,11 @@ body{
     body{background-color: #132f2b;}
     .NOTICIAS{background-color: #132f2b;}
     .NOTICIAS{color:#FEE5EA;}
+   .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
 
     #afa{color: #132f2b;}
     #botao1{color: #FEE5EA;}
@@ -84,4 +89,5 @@ body{
         display:flex;}
  
     article{
+
         background-color:rgba(#132f2b);}
