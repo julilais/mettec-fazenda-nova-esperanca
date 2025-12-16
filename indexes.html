@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
-    <nav id="linguas">
-        <a href="index.html" lang="pt-BR">PT</a>
-        <a href="indexen.html" lang="en">EN</a>
-        <a href="indexes.html" lang="es">ES</a>
-        <a href="indexfr.html" lang="fr">FR</a>
-    </nav>
  
 <head>
     <link href="estilo.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="./script/script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <title>
         Faz. Nova Esperança
     </title>
  
 </head>
  
-<body>
+<body class="tamanhoItem">
 
-</header>
+    <nav class="barra-total">
+        <div class="menu-superior">           
+ <nav id="linguas">
+                <a href="index.html" lang="pt-BR">PT</a>
+                <a href="indexen.html" lang="en">EN</a>
+                <a href="indexes.html" lang="es">ES</a>
+                <a href="indexfr.html" lang="fr">FR</a>
+            </nav>
+            <div>
+                <button class="btn tamanhoItem" onclick="changeFontSize('decrease')">A-</button>
+                <button class="btn tamanhoItem" onclick="changeFontSize('normal')">A</button>
+                <button class="btn tamanhoItem" onclick="changeFontSize('increase')">A+</button>
+            </div>
+        </div>
+    
+
+
 <h1 id="Fazenda">Fazenda Nova Esperança</h1>
 <header id="banner">
-    <img src="./assets/foto todo mundo.jpg" width="700" height="600">
+    <img src="./assets/foto todo mundo.jpg" alt="La imagen muestra muchas personas frente a la Hacienda Nova Esperança."  width="700" height="600">
 </header>
     <header id="cabeçalho">
         <nav>
-            <ul>
+            <ul id="botoes">
                 <li><a href="#CACAU">CACAO</a></li>
                 <li><a href="#NOTICIAS">NOTICIAS</a></li>
                 <li><a href="#FOTOS">FOTOS</a></li>
@@ -33,20 +43,18 @@
             </ul>
         </nav>
     </header>
+</nav>
    
 
-    <article container>
+    <article class="container">
         <h1 id="Bemvindos">BIENVENIDOS!</h1>
         
-        <iframe id="VIDEOROCA" width="500" height="300" src="./assets/video roca.mp4" 
-       
-        
-            title="Um pouco mais da fazenda" frameborder="0"
+        <iframe id="VIDEOROCA" width="500" height="300" src="./assets/video roca.mp4" title="Um pouco mais da fazenda" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
  
-        <p id="afa">La Fazenda Nova Esperança, que hoy tiene casi 60 años, fue construida por Agostinho Almeida y actualmente es administrada por su hijo, Adilson Almeida.</p>      
+        <p id="afa">La Fazenda Nova Esperança, que hoy tiene casi 60 años, fue construida por Augustinho Almeida y actualmente es administrada por su hijo, Adilson Almeida.</p>      
         <p id="afa">La fazenda es especializada en la producción de cacao, pero también cuenta con un sistema agroforestal con múltiples cultivos y cuenta con más de 30 variedades de frutas y raíces.</p></article>
         
         <article id="CACAU">
@@ -102,8 +110,11 @@
         width="400" height="600">
 
        
-       </div>
+        </div>
+
+       
         <h1 id="FOTOS">FOTOS</h1>
+        <div class="fotos"> 
 
         <img src="./assets/vó.jpeg"
         alt="La imagen muestra a una mujer de cabello gris tocando granos de cacao dentro de un invernadero."
@@ -111,33 +122,31 @@
 
         <img src="./assets/tia nalva cacau.jpeg"
         alt="La imagen muestra a una mujer lanzando granos de cacao al aire dentro de un invernadero."
-        width="600" height="400">
+        height="600">
 
         <img src="./assets/tio.jpeg"
         alt="La imagen muestra a un hombre chupando cacao en medio del bosque."
-        width="400" height="600">
+        height="600"> </div>
         </article>
 
 
-            <article>
+            <article class="container">
         <h1 id="QUEM SOMOS">QUIENES SOMOS</h1>
-        <p>Me llamo Juliana Almeida y soy nieta de Agostinho Almeida. Toda mi familia es del interior de Bahía y, excepto yo, todos vivimos en la ciudad de Jequié, Bs. As. La finca está ubicada en la región suroeste/sur del estado y es nuestra pasión. Recoger cacao, papaya, mandioca, anacardo, mandarina, limón, plátano y coco son tareas comunes cuando vamos allí.
+        <p>Me llamo Juliana Almeida y soy nieta de Augustinho Almeida. Toda mi familia es del interior de Bahía y, excepto yo, todos vivimos en la ciudad de Jequié, Bs. As. La finca está ubicada en la región suroeste/sur del estado y es nuestra pasión. Recoger cacao, papaya, mandioca, anacardo, mandarina, limón, plátano y coco son tareas comunes cuando vamos allí.
 
             Es una alegría poder disfrutar de este espacio diverso y especial.
 
-        <img src="./assets/ju.jpeg" alt="La imagen muestra a una niña con una blusa negra y pantalones cortos estampados junto a un árbol de cacao cargado de frutos." width="400" height="500">
+            <div class="fotos">
+        <img src="./assets/ju.jpeg" alt="La imagen muestra a una niña con una blusa negra y pantalones cortos estampados junto a un árbol de cacao cargado de frutos." height="400">
         <img src="./assets/galera.jpeg" alt="La imagen muestra a algunos miembros de la familia Almeida entre los árboles de cacao." width="600" height="400">
-        <img src="./assets/galera2.jpeg" alt="La imagen muestra a 6 miembros de la familia sosteniendo varios tipos de calabazas." width="600" height="400">
+        <img src="./assets/galera2.jpeg" alt="La imagen muestra a 6 miembros de la familia sosteniendo varios tipos de calabazas." width="600" height="400"> </div>
     
         
-        <footer>Este sitio web fue producido para la asignatura de Métodos y Técnicas Aplicadas al Multilingüismo, del curso de Lenguas Extranjeras Aplicadas de la Universidad de Brasilia. </p></article></footer>
+        <footer class="container">Este sitio web fue producido para la asignatura de Métodos y Técnicas Aplicadas al Multilingüismo, del curso de Lenguas Extranjeras Aplicadas de la Universidad de Brasilia. </p></article></footer>
  
 </body>
  
 </html>
 
 
-
  
-
-

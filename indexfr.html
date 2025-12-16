@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <nav id="linguas">
-        <a href="index.html" lang="pt-BR">PT</a>
-        <a href="indexen.html" lang="en">EN</a>
-        <a href="indexes.html" lang="es">ES</a>
-        <a href="indexfr.html" lang="fr">FR</a>
-    </nav>
- 
+    
 <head>
     <link href="estilo.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="./script/script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <title>
         Faz. Nova Esperança
     </title>
  
 </head>
  
-<body>
+<body class="tamanhoItem">
 
-</header>
+    <nav class="barra-total">
+        <div class="menu-superior">           
+ <nav id="linguas">
+                <a href="index.html" lang="pt-BR">PT</a>
+                <a href="indexen.html" lang="en">EN</a>
+                <a href="indexes.html" lang="es">ES</a>
+                <a href="indexfr.html" lang="fr">FR</a>
+            </nav>
+            <div>
+                <button class="btn tamanhoItem" onclick="changeFontSize('decrease')">A-</button>
+                <button class="btn tamanhoItem" onclick="changeFontSize('normal')">A</button>
+                <button class="btn tamanhoItem" onclick="changeFontSize('increase')">A+</button>
+            </div>
+            </div>
 <h1 id="Fazenda">Fazenda Nova Esperança</h1>
 <header id="banner">
-    <img src="./assets/foto todo mundo.jpg" width="700" height="600">
+    <img src="./assets/foto todo mundo.jpg" alt="L'image montre de nombreuses personnes devant la Fazenda Nova Esperança." width="700" height="600">
 </header>
     <header id="cabeçalho">
         <nav>
@@ -33,9 +40,10 @@
             </ul>
         </nav>
     </header>
+    </nav>
    
 
-    <article container>
+    <article class="container">
         <h1 id="Bemvindos">BIENVENUES!</h1>
         
         <iframe id="VIDEOROCA" width="500" height="300" src="./assets/video roca.mp4" 
@@ -46,7 +54,7 @@
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
  
-        <p id="afa">La Fazenda Nova Esperança, qui a aujourd'hui presque 60 ans, a été construite par Agostinho Almeida et est actuellement gérée par son fils, Adilson Almeida.</p>      
+        <p id="afa">La Fazenda Nova Esperança, qui a aujourd'hui presque 60 ans, a été construite par Augustinho Almeida et est actuellement gérée par son fils, Adilson Almeida.</p>      
         <p id="afa">La ferme est spécialisée dans la production de cacao, mais dispose d'un système agroforestier multiculturel et compte plus de 30 variétés de fruits et de racines.</p></article>
         
         <article id="CACAU">
@@ -83,7 +91,7 @@
             width="400" height="600">
             
         
-        </article id>
+        </article>
 
         <div class="NOTÍCIAS container">
             <h1 id="NOTICIAS">NOUVELLES</h1>
@@ -98,8 +106,9 @@ Source : Agência Câmara de Notícias. </p>
         width="400" height="600">
 
        
-       </div>
+
         <h1 id="FOTOS">PHOTOS</h1>
+        <div class="fotos">
 
         <img src="./assets/vó.jpeg"
         alt="L'image montre une dame aux cheveux gris touchant des fèves de cacao dans une serre."
@@ -107,22 +116,23 @@ Source : Agência Câmara de Notícias. </p>
 
         <img src="./assets/tia nalva cacau.jpeg"
         alt="L'image montre une femme jetant des fèves de cacao en l'air, à l'intérieur d'une serre."
-        width="600" height="400">
+        height="600">
 
         <img src="./assets/tio.jpeg"
         alt="L'image montre un homme en train de sucer du cacao au milieu de la forêt."
-        width="400" height="600">
+        height="600"> </div>
         </article>
 
     
             <article>
         <h1 id="QUEM SOMOS">QUI SOMMES-NOUS</h1>
-        <p>Je m'appelle Juliana Almeida et je suis la petite-fille d'Agostinho Almeida. Toute ma famille vient de l'intérieur de l'État de Bahia et tous, sauf moi, vivent dans la ville de Jequié, BA. La ferme se trouve dans le sud-ouest/sud de l'État et c'est notre passion. Cueillir du cacao, des papayes, du manioc, des cajous, des mandarines, des citrons, des bananes et des noix de coco sont des tâches habituelles lorsque nous nous y rendons. 
+        <p>Je m'appelle Juliana Almeida et je suis la petite-fille d'Augustinho Almeida. Toute ma famille vient de l'intérieur de l'État de Bahia et tous, sauf moi, vivent dans la ville de Jequié, BA. La ferme se trouve dans le sud-ouest/sud de l'État et c'est notre passion. Cueillir du cacao, des papayes, du manioc, des cajous, des mandarines, des citrons, des bananes et des noix de coco sont des tâches habituelles lorsque nous nous y rendons. 
             C'est une joie de pouvoir profiter de cet espace si diversifié et si spécial.</p>
 
-        <img src="./assets/ju.jpeg" alt="L'image montre une jeune fille vêtue d'un t-shirt noir et d'un short à motifs à côté d'un pied de cacao chargé." width="400" height="500">
+            <div class="fotos">
+        <img src="./assets/ju.jpeg" alt="L'image montre une jeune fille vêtue d'un t-shirt noir et d'un short à motifs à côté d'un pied de cacao chargé." height="400">
         <img src="./assets/galera.jpeg" alt="La photo montre quelques membres de la famille Almeida au milieu des cacaoyers." width="600" height="400">
-        <img src="./assets/galera2.jpeg" alt="L'image montre six personnes tenant différents types de citrouilles." width="600" height="400">
+        <img src="./assets/galera2.jpeg" alt="L'image montre six personnes tenant différents types de citrouilles." width="600" height="400"> </div>
         <footer>Site créé pour le cours « Méthodes et techniques appliquées au multilinguisme » de la licence Langues étrangères appliquées de l'Université de Brasilia. </article></footer>
  
 </body>
@@ -130,6 +140,4 @@ Source : Agência Câmara de Notícias. </p>
 </html>
 
 
-
  
-

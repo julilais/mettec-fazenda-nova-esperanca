@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-    <nav id="linguas">
-        <a href="index.html" lang="pt-BR">PT</a>
-        <a href="indexen.html" lang="en">EN</a>
-        <a href="indexes.html" lang="es">ES</a>
-        <a href="indexfr.html" lang="fr">FR</a>
-    </nav>
- 
+    
 <head>
     <link href="estilo.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="./script/script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <title>
         Faz. Nova Esperança
     </title>
  
 </head>
  
-<body>
+<body class="tamanhoItem">
+    <nav class="barra-total">
+        <div class="menu-superior">           
+ <nav id="linguas">
+                <a href="index.html" lang="pt-BR">PT</a>
+                <a href="indexen.html" lang="en">EN</a>
+                <a href="indexes.html" lang="es">ES</a>
+                <a href="indexfr.html" lang="fr">FR</a>
+            </nav>
+            <div>
+                <button class="btn tamanhoItem" onclick="changeFontSize('decrease')">A-</button>
+                <button class="btn tamanhoItem" onclick="changeFontSize('normal')">A</button>
+                <button class="btn tamanhoItem" onclick="changeFontSize('increase')">A+</button>
+            </div>
+        </div>
 
-</header>
 <h1 id="Fazenda">Fazenda Nova Esperança</h1>
 <header id="banner">
-    <img src="./assets/foto todo mundo.jpg" width="700" height="600">
+    <img src="./assets/foto todo mundo.jpg" alt="The image shows many people in front of the Nova Esperança Farm." width="700" height="600">
 </header>
     <header id="cabeçalho">
         <nav>
-            <ul>
+            <ul id="botoes">
                 <li><a href="#CACAU">COCOA</a></li>
                 <li><a href="#NOTICIAS">NEWS</a></li>
                 <li><a href="#FOTOS">PHOTOS</a></li>
@@ -33,9 +40,10 @@
             </ul>
         </nav>
     </header>
+    </nav>
    
 
-    <article container>
+    <article class="container">
         <h1 id="Bemvindos">WELCOME!</h1>
         
         <iframe id="VIDEOROCA" width="500" height="300" src="./assets/video roca.mp4" 
@@ -46,7 +54,7 @@
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
  
-        <p id="afa">The Nova Esperança Farm, now almost 60 years old, was built by Agostinho Almeida and is currently managed by his son, Adilson Almeida.</p>      
+        <p id="afa">The Nova Esperança Farm, now almost 60 years old, was built by Augustinho Almeida and is currently managed by his son, Adilson Almeida.</p>      
         <p id="afa">The farm specializes in cocoa production, but has a multi-crop agroforestry system and grows more than 30 varieties of fruits and roots.</p></article>
         
         <article id="CACAU">
@@ -102,10 +110,11 @@
 
         <img src="./assets/cacaueiro.jpeg" alt="The image shows a cacao tree laden with fruit, with cacao pods in shades of orange, red, and purple."
         width="400" height="600">
-
+        </div>
        
-       </div>
+       
         <h1 id="FOTOS">PHOTOS</h1>
+        <div class="fotos">
 
         <img src="./assets/vó.jpeg"
         alt="The image shows a gray-haired woman touching cocoa beans inside a greenhouse."
@@ -113,32 +122,31 @@
 
         <img src="./assets/tia nalva cacau.jpeg"
         alt="The image shows a woman tossing cocoa beans into the air inside a greenhouse."
-        width="600" height="400">
+        height="600">
 
         <img src="./assets/tio.jpeg"
         alt="The image shows a man sucking on cocoa in the middle of the forest."
-        width="400" height="600">
+        height="600"></div>
         </article>
 
     
-            <article>
+            <article class="container">
         <h1 id="QUEM SOMOS">WHO WE ARE</h1>
-        <p>My name is Juliana Almeida, and I am the granddaughter of Agostinho Almeida. My entire family comes from the interior of Bahia, and all of them, except me, live in the city of Jequié, BA. The farm is located in the southwest/south region of the state and is our passion. Picking cocoa, papaya, cassava, cashew, tangerine, lemon, banana, and coconut are customary tasks when we go there.
+        <p>My name is Juliana Almeida, and I am the granddaughter of Augustinho Almeida. My entire family comes from the interior of Bahia, and all of them, except me, live in the city of Jequié, BA. The farm is located in the southwest/south region of the state and is our passion. Picking cocoa, papaya, cassava, cashew, tangerine, lemon, banana, and coconut are customary tasks when we go there.
 
             It is a joy to be able to enjoy this diverse and special space.</p>
 
-        <img src="./assets/ju.jpeg" alt="The image shows a girl in a black shirt and patterned shorts next to a cocoa tree laden with fruit." width="400" height="500">
+            <div class="fotos">
+
+        <img src="./assets/ju.jpeg" alt="The image shows a girl in a black shirt and patterned shorts next to a cocoa tree laden with fruit." height="400">
         <img src="./assets/galera.jpeg" alt="The image shows some members of the Almeida family between the cocoa trees." width="600" height="400">
-        <img src="./assets/galera2.jpeg" alt="The image shows 6 family members holding various types of pumpkins." width="600" height="400">
+        <img src="./assets/galera2.jpeg" alt="The image shows 6 family members holding various types of pumpkins." width="600" height="400"> </div>
     
-        <footer>This website was produced for the subject of Methods and Techniques Applied to Multilingualism, in the Applied Foreign Languages ​​course at the University of Brasília. </article></footer>
+        <footer class="container">This website was produced for the subject of Methods and Techniques Applied to Multilingualism, in the Applied Foreign Languages ​​course at the University of Brasília. </article></footer>
  
 </body>
  
 </html>
 
 
-
  
-
-
